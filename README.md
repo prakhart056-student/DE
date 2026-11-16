@@ -574,7 +574,7 @@ Once the Docker services are running:
 | Apache Airflow | http://localhost:8080 |
 | Metabase | http://localhost:3000 |
 | PostgreSQL | localhost:5432 |
-| Streamlit Dashboard | http://localhost:8501 |
+| Streamlit Dashboard | https://cpd-dash-81406745.azurewebsites.net/ |
 
 ### Starting the Streamlit Dashboard
 
