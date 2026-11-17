@@ -571,8 +571,8 @@ Once the Docker services are running:
 
 | Application | URL |
 |---|---|
-| Apache Airflow | http://localhost:8080 |
-| Metabase | http://localhost:3000 |
+| Apache Airflow | http://20.192.9.103:8080/home |
+| Metabase | http://20.192.9.103:3000/auto/dashboard/table/20?date_time=&day_of_week=&type= |
 | PostgreSQL | localhost:5432 |
 | Streamlit Dashboard | https://cpd-dash-81406745.azurewebsites.net/ |
 
