@@ -650,25 +650,7 @@ The hosted demo uses two Azure resources:
 
 ### Cloud Architecture
 
-```text
- Cambridge Open Data (Socrata API)
-             |
-             v
- +--------------------------------------------------+
- | Azure VM (Ubuntu, Docker Compose)                |
- |                                                  |
- |   Airflow  :8080 --- ETL ---> PostgreSQL :5432   |
- |   Metabase :3000 ------------> PostgreSQL        |
- +--------------------------------------------------+
-             ^
-             |  PostgreSQL protocol, read-only user "dash_ro"
-             |  (port 5432 allowed only from the App Service IPs)
-             |
- +--------------------------------------+
- | Azure App Service                    | <--- HTTPS --- Browser
- |   Streamlit dashboard (dashboard.py) |
- +--------------------------------------+
-```
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/0090fcb8-ec80-4814-be71-4fb8d7e1a28c" />
 
 ### Step 1: Create the VM and start the stack
 
