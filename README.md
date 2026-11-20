@@ -89,44 +89,7 @@ The primary objectives of this project are:
 
 The project follows a modular ETL architecture.
 
-```text
-       Socrata Open Data API
-       Cambridge Police Data
-                 |
-                 v
-        +------------------+
-        |  DATA EXTRACTION |
-        |      Python      |
-        +------------------+
-                 |
-                 v
-        +------------------+
-        |  DATA VALIDATION |
-        |     Pandas       |
-        +------------------+
-                 |
-                 v
-        +------------------+
-        | DATA TRANSFORM   |
-        | Cleaning and     |
-        | Feature Creation |
-        +------------------+
-                 |
-                 v
-        +------------------+
-        |   DATA LOADING   |
-        |    PostgreSQL    |
-        +------------------+
-                 |
-                 v
-        +------------------+
-        | ANALYTICS LAYER  |
-        +------------------+
-              /     \
-             v       v
-        Streamlit  Metabase
-        Dashboard  Analytics
-```
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/65dc649e-61d0-4459-b021-cc9527479e73" />
 
 Apache Airflow orchestrates the extraction, validation, transformation, and loading tasks.
 
